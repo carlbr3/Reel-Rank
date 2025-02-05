@@ -1,0 +1,5 @@
+-- DROP DATABASE
+DROP DATABASE IF EXISTS movieranking-db;
+
+-- CREATE DATABASE
+CREATE DATABASE movieranking-db;
