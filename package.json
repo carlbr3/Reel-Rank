@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
     "react-router-dom": "^7.1.4",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
