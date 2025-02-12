@@ -1,0 +1,16 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+  }

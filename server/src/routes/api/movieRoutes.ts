@@ -1,2 +1,0 @@
-router.post
-router.get

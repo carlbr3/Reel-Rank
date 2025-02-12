@@ -1,9 +1,18 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "typescript": "^5.2.2"
+=======
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "react-router-dom": "^7.1.4",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
+    "typescript": "^5.7.3"
+>>>>>>> 388037ad94726849dc0e7ac0a796b27a0a2cffd5
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
