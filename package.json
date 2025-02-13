@@ -7,5 +7,35 @@
   "devDependencies": {
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3"
-  }
+  },
+  "name": "reel-rank",
+  "version": "1.0.0",
+  "description": "Web app that allows users to create custom rankings of their favorite movies and TV shows, compare lists with friends, and receive curated recommendations based on shared user preferences.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm i && npm run seed && npm run build && npm run start:dev",
+    "start": "npm run client:build && npm run server",
+    "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
+    "server": "cd server && npm start",
+    "server:dev": "cd server && npm run dev",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client:build": "cd client && npm run build",
+    "client:dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed",
+    "render-build": "npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlbr3/Reel-Rank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/carlbr3/Reel-Rank/issues"
+  },
+  "homepage": "https://github.com/carlbr3/Reel-Rank#readme"
 }
