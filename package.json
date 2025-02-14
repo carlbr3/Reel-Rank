@@ -1,20 +1,10 @@
 {
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.5"
-  },
-  "devDependencies": {
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3"
-  },
-  "name": "reel-rank",
+  "name": "main",
   "version": "1.0.0",
-  "description": "Web app that allows users to create custom rankings of their favorite movies and TV shows, compare lists with friends, and receive curated recommendations based on shared user preferences.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --max-old-space-size=4096 node_modules/vite/bin/vite.js",
     "start": "npm run client:build && npm run server",
     "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
     "server": "cd server && npm start",
@@ -22,20 +12,17 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "client:build": "cd client && npm run build",
     "client:dev": "cd client && npm run dev",
-    "build": "cd client && npm run build",
+    "build": "cd server && npm run build",
     "seed": "cd server && npm run seed",
-    "render-build": "npm install && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carlbr3/Reel-Rank.git"
+    "render-build": "npm install && npm run build",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/carlbr3/Reel-Rank/issues"
-  },
-  "homepage": "https://github.com/carlbr3/Reel-Rank#readme"
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.3",
+    "wait-on": "^7.2.0"
+  }
 }
